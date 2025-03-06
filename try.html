@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Footer Section -->
+    <footer class="bg-slate-50 py-6 shadow-md">
+        <section class="flex items-center justify-between px-6 max-w-6xl mx-auto">
+            <!-- Logo Section -->
+            <div class="flex items-center gap-3">
+                <img src="/assets/logo.png" alt="Logo" class="h-10 w-auto">
+                <h1 class="text-2xl font-bold text-gray-800">
+                    <span class="text-blue-500">DEV</span>BOARD
+                </h1>
+            </div>
+    
+            <!-- Right Section -->
+            <div class="flex items-center gap-6">
+                <button onclick="goBack()" class="bg-blue-700 text-white rounded-md py-2 px-4 hover:bg-blue-600 focus:outline-none">Back to Dashboard</button>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Main Content Section -->
+    <section class="py-12 px-6">
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">Blog</h1>
+        
+        <div class="grid gap-6 max-w-4xl mx-auto">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold text-gray-800">Question-1: What are the different ways to select an element in the DOM?</h2>
+                <pre class="bg-gray-100 p-4 rounded-md mt-2"><code>const element = document.getElementById('myId');</code></pre>
+                <p class="mt-2 text-gray-600">const elements = document.getElementsByClassName('myClass');</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold text-gray-800">Question-2: What is the difference between innerHTML, innerText, and textContent?</h2>
+                <p class="mt-2 text-gray-600"><strong>innerHTML:</strong> Content with HTML tags.</p>
+                <p class="mt-2 text-gray-600"><strong>innerText:</strong> Only visible text.</p>
+                <p class="mt-2 text-gray-600"><strong>textContent:</strong> All text (visible or hidden, but without HTML tags).</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold text-gray-800">Question-3: What is event delegation in the DOM?</h2>
+                <p class="mt-2 text-gray-600">Event delegation is a technique where an event listener is added to a parent element, and through that, events on its child elements are handled. It improves performance and helps handle events on dynamically added elements.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold text-gray-800">Question-4: What is event bubbling in the DOM?</h2>
+                <p class="mt-2 text-gray-600">Event Bubbling is the process where an event triggered on a child element propagates upward to its parent elements. This allows parent elements to listen for events on their child elements without needing individual listeners on each child. You can stop the event from bubbling further by using event.stopPropagation().</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold text-gray-800">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
+                <p class="mt-2 text-gray-600"><strong>Creating Elements:</strong> Use <code>document.createElement()</code> to create new HTML elements.</p>
+                <p class="mt-2 text-gray-600"><strong>Adding Elements:</strong> Use <code>appendChild()</code> or <code>insertBefore()</code> to add newly created elements to the DOM.</p>
+                <p class="mt-2 text-gray-600"><strong>Removing Elements:</strong> Use <code>remove()</code> or <code>removeChild()</code> to remove an element from the DOM.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function goBack() {
+            window.history.back(); // Goes back to the previous page
+        }
+    </script>
+
+</body>
+</html>
