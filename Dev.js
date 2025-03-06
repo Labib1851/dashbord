@@ -10,7 +10,7 @@ document.getElementById('add-text').addEventListener('click', function() {
     h1.innerHTML = 'You have Completed The Task Add<br> Dark Mode at 12:48:15';
     ol.appendChild(h1);
 
-    // আলার্ট ফাংশন কল করা
+     
     myFunction();
 
     this.disabled = true;
@@ -24,10 +24,10 @@ function updateDate1() {
     document.getElementById("current-date-1").innerText = formattedDate;
 }
 
-// ফাংশন কল করে সাথে সাথেই তারিখ আপডেট করা হবে
+ 
 updateDate1();
 
-// প্রতিদিন রাত ১২টায় (২৪ ঘণ্টা পর) তারিখ আপডেট হবে
+ 
 setInterval(updateDate1, 86400000);
 
 function myFunction() {
@@ -57,10 +57,8 @@ function updateDate2() {
     document.getElementById("current-date-2").innerText = formattedDate;
 }
 
-// ফাংশন কল করে সাথে সাথেই তারিখ আপডেট করা হবে
 updateDate2();
 
-// প্রতিদিন রাত ১২টায় (২৪ ঘণ্টা পর) তারিখ আপডেট হবে
 setInterval(updateDate2, 86400000);
 
 function myFunction() {
@@ -85,10 +83,10 @@ function updateDate3() {
     document.getElementById("current-date-3").innerText = formattedDate;
 }
 
-// ফাংশন কল করে সাথে সাথেই তারিখ আপডেট করা হবে
+ 
 updateDate3();
 
-// প্রতিদিন রাত ১২টায় (২৪ ঘণ্টা পর) তারিখ আপডেট হবে
+ 
 setInterval(updateDate3, 86400000);
 
 function myFunction() {
@@ -113,10 +111,10 @@ function updateDate4() {
     document.getElementById("current-date-4").innerText = formattedDate;
 }
 
-// ফাংশন কল করে সাথে সাথেই তারিখ আপডেট করা হবে
+ 
 updateDate4();
 
-// প্রতিদিন রাত ১২টায় (২৪ ঘণ্টা পর) তারিখ আপডেট হবে
+ 
 setInterval(updateDate4, 86400000);
 
 function myFunction() {
@@ -141,10 +139,10 @@ function updateDate5() {
     document.getElementById("current-date-5").innerText = formattedDate;
 }
 
-// ফাংশন কল করে সাথে সাথেই তারিখ আপডেট করা হবে
+ 
 updateDate5();
 
-// প্রতিদিন রাত ১২টায় (২৪ ঘণ্টা পর) তারিখ আপডেট হবে
+ 
 setInterval(updateDate5, 86400000);
 
 function myFunction() {
@@ -169,10 +167,10 @@ function updateDate6() {
     document.getElementById("current-date-6").innerText = formattedDate;
 }
 
-// ফাংশন কল করে সাথে সাথেই তারিখ আপডেট করা হবে
+ 
 updateDate6();
 
-// প্রতিদিন রাত ১২টায় (২৪ ঘণ্টা পর) তারিখ আপডেট হবে
+ 
 setInterval(updateDate6, 86400000);
 
 function myFunction() {
